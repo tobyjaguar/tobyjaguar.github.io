@@ -14,20 +14,29 @@ SmartPiggies is an open source standard for a peer-to-peer derivatives market. I
 
 ---
 
-### <a href="https://tokenshop.tobyjaguar.com" target="new">Token Shop</a>
+### <a href="https://ethergrams.xyz/" target="new">Ethergrams</a>
 
-<a href="https://tokenshop.tobyjaguar.com" target="new">
-<img src="../assets/_Shop.jpg" alt="token shop logo" width="600">
+<a href="https://ethergrams.xyz/" target="new">
+<img src="../assets/_ethergrams-default.jpeg" alt="ethergrams logo" width="400">
 </a>
+
+Ethergrams are reloadable NFTs intended to send be sent as gifts or momentos for celebrations like greeting cards. The project was an experiment in sending gifts on the blockchain where users could purchase an NFT, add USDC to the NFT, and send it to a friend of loved one for a special occation like birthdays and holidays.
+
+---
+
+### Token Shop
+
+<img src="../assets/_Shop.jpg" alt="token shop logo" width="600">
+
 
 TokenShop is a dApp that let's you buy Toby Tokens. Toby Tokens are Ethereum ERC-20 tokens (on mainnet and ropsten) that are redeemable in dollars from the bank of toby (i.e. me, if we meet in person). This is a social project exploring the token lifecycle with ERC-20 tokens, with the goal to complete transactions round trips for Toby Tokens. A user can buy Toby Tokens from the dApp for ether. 1 Toby Token costs $1 USD. You can buy more than a dollars worth (max $100) or less, but the tokens are purchased with ether. When we meet in person, I will reclaim the tokens in USD at the exchange rate of 1 Token = $1 USD. For reclamation you can burn them or transfer them to me or back to the shop. This is an exploration into stable tokens, with the intention of making round trips of users buying from the app, and reclaiming tokens for cash upon a personal meeting over a coffee and a good conversation. I have currently made two full transaction cycles to date. If you would like to participate there is still stock in the shop!
 
 ---
 
-## <a href="https://telegram.me/gsbitbot" target="new">GSBitBot</a>
-<a href="https://telegram.me/gsbitbot" target="new">
+## GSBitBot
+
 <img src="../assets/_gsbitbot.jpg" alt="bitbot logo" width="300">
-</a>
+
 
 GSBitBot is a telegram bot that returns crypto prices including bitcoin, ethereum, gold, silver, as well as the bitcoin to ethereum ratio, and the gold to silver ratio. The price information is pulled from fixer.io.
 
