@@ -63,20 +63,8 @@ Hugo only renders files inside `content/` and `static/`. Root-level files and ot
 
 ## Current Status
 
-Migration from Blot.im to Hugo + GitHub Pages is complete. Infrastructure is configured, awaiting DNS propagation and first push.
+Site is live. Migration from Blot.im to Hugo + GitHub Pages completed 2026-04-17.
 
-### Completed (2026-04-17)
-- [x] Migrated all content (17 posts, 3 pages, all images) to Hugo format
-- [x] Added PaperMod theme, hero image, CrossWorlds project entry
-- [x] Removed Blot push URL from origin
-- [x] Renamed GitHub repo to `tobyjaguar.github.io`
-- [x] Updated local origin to `git@github.com:tobyjaguar/tobyjaguar.github.io.git`
-- [x] Enabled GitHub Pages with GitHub Actions source
-- [x] DNS records configured (A records + CNAME)
-- [x] Custom domain set in GitHub Pages settings
-
-### Next steps (once DNS propagates)
-1. Commit and push all changes to `master` — this triggers the first GitHub Actions build
-2. Verify site loads at `https://tobyjaguar.github.io/` and `https://tobyjaguar.com`
-3. Enable "Enforce HTTPS" in GitHub repo Settings > Pages
-4. Cancel Blot subscription
+- Site: `https://tobyjaguar.com` (custom domain with HTTPS)
+- Repo: `tobyjaguar/tobyjaguar.github.io`
+- Remaining: Cancel Blot subscription

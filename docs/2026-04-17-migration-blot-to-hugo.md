@@ -66,12 +66,12 @@ tobyjaguar.com/
 - [x] DNS CNAME `www` set to `tobyjaguar.github.io`
 - [x] Custom domain configured in GitHub Pages settings
 
-### Blocked — awaiting DNS propagation
-As of 2026-04-17, `dig tobyjaguar.com` still resolves to `54.191.179.131` (old Blot IP). DNS propagation can take up to 48 hours.
+- [x] First push to `master` — GitHub Actions build succeeded
+- [x] DNS propagated to GitHub Pages IPs
+- [x] HTTPS / SSL certificate active
+- [x] Site live at `https://tobyjaguar.com`
 
-### Next steps (once DNS resolves to GitHub IPs)
-1. Commit and push all changes to `master` — triggers first GitHub Actions build
-2. Verify site loads at `https://tobyjaguar.github.io/` and `https://tobyjaguar.com`
-3. Enable "Enforce HTTPS" in GitHub repo Settings > Pages
-4. Cancel Blot subscription
-5. Optionally update the `docs/` folder with a confirmation that the migration is complete
+### Remaining
+- [ ] Cancel Blot subscription
+
+### Migration complete: 2026-04-17
