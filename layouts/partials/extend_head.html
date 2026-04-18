@@ -1,0 +1,27 @@
+<style>
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+@media (max-width: 768px) {
+    .hero-image img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image img {
+        max-height: 180px;
+    }
+}
+</style>

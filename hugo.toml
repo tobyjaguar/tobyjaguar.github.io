@@ -1,0 +1,46 @@
+baseURL = "https://tobyjaguar.com/"
+languageCode = "en-us"
+title = "Toby Jaguar"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[params.homeInfoParams]
+  Title = "Toby Jaguar"
+  Content = "Blog and projects"
+  heroImage = "/assets/tobyjaguar_landscape.jpeg"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[permalinks]
+  posts = "/:title/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
