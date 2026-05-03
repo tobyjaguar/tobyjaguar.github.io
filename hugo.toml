@@ -33,12 +33,18 @@ paginate = 10
     name = "Contact"
     url = "/contact/"
     weight = 30
+  [[menu.main]]
+    identifier = "klawpheus"
+    name = "Klawpheus"
+    url = "/klawpheus/"
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS"]
 
 [permalinks]
   posts = "/:title/"
+  klawpheus = "/klawpheus/:title/"
 
 [markup]
   [markup.goldmark]
