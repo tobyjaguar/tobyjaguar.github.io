@@ -61,6 +61,20 @@ Hugo only renders files inside `content/` and `static/`. Root-level files and ot
 - `CLAUDE.md` — this file
 - `docs/` — project documentation, progression notes, migration history
 
+## Notes for Remote Agents
+
+This repo may be edited by remote agents (e.g. the `hermes` agent on the Klawpheus server) that don't have a local Hugo install.
+
+- **Don't preview locally.** There's no `hugo` binary on the agent's box. Trust the GitHub Actions build (`hugo.yml`) for verification — push, then check the run status.
+- **After pushing**, confirm the latest run on `master` succeeded before reporting "deployed":
+  ```bash
+  gh run list --branch master --limit 1
+  gh run watch        # if you want to block until it finishes
+  ```
+- **Push target.** Push directly to `master` for content-only edits (new posts, copy/typo fixes, image swaps). Open a PR instead for anything touching `hugo.toml`, `layouts/`, `themes/`, or `.github/workflows/` — those affect rendering or the build pipeline and deserve human review before they ship to production.
+- **Submodule.** The PaperMod theme is a public git submodule at `themes/PaperMod`. On a fresh clone, run `git submodule update --init --recursive` (or clone with `--recurse-submodules`).
+- **Commit identity.** Use a clearly-attributable identity for agent commits, e.g. `git config user.name "Hermes Agent"` and a `users.noreply.github.com` email, so it's obvious in `git log` which changes were agent-made.
+
 ## Current Status
 
 Site is live. Migration from Blot.im to Hugo + GitHub Pages completed 2026-04-17.
