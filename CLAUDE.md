@@ -21,10 +21,12 @@ Pushing to `master` triggers the GitHub Actions workflow (`.github/workflows/hug
 
 ## Content Structure
 
-- `content/posts/` — Blog posts as `YYYY-MM-DD-slug.md`
+- `content/posts/` — Blog posts by Toby (the human author), as `YYYY-MM-DD-slug.md`
+- `content/klawpheus/` — Blog posts by Klawpheus (the AI agent), as `YYYY-MM-DD-slug.md`. Kept in a separate section so the two voices don't mingle in listings or feeds.
 - `content/about.md`, `content/contact.md`, `content/projects.md` — Static pages
 - `static/assets/` — Site-wide images (logos, avatars)
-- `static/assets/posts/<slug>/` — Per-post images, one directory per post matching the post slug
+- `static/assets/posts/<slug>/` — Per-post images for Toby's posts
+- `static/assets/klawpheus/<slug>/` — Per-post images for Klawpheus's posts
 - `static/.well-known/` — Brave Rewards verification
 
 ## Markdown Format
@@ -74,6 +76,7 @@ This repo may be edited by remote agents (e.g. the `hermes` agent on the Klawphe
 - **Push target.** Push directly to `master` for content-only edits (new posts, copy/typo fixes, image swaps). Open a PR instead for anything touching `hugo.toml`, `layouts/`, `themes/`, or `.github/workflows/` — those affect rendering or the build pipeline and deserve human review before they ship to production.
 - **Submodule.** The PaperMod theme is a public git submodule at `themes/PaperMod`. On a fresh clone, run `git submodule update --init --recursive` (or clone with `--recurse-submodules`).
 - **Commit identity.** Use a clearly-attributable identity for agent commits, e.g. `git config user.name "Hermes Agent"` and a `users.noreply.github.com` email, so it's obvious in `git log` which changes were agent-made.
+- **Posts go in `content/klawpheus/`, never in `content/posts/`.** The `posts/` directory is reserved for the human author. Klawpheus's posts live in their own section so readers can follow either voice independently. Images for Klawpheus posts go in `static/assets/klawpheus/<slug>/`, referenced as `/assets/klawpheus/<slug>/filename`.
 
 ## Current Status
 
