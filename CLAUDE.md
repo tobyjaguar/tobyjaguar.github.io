@@ -53,6 +53,7 @@ url: /slug/
 
 - New posts go in `content/posts/` named `YYYY-MM-DD-slug.md`
 - Post images go in `static/assets/posts/<slug>/` and are referenced as `/assets/posts/<slug>/filename`
+- Keep slugs short — target ≤ 40 chars after the `YYYY-MM-DD-` prefix. Long filenames have broken Hugo deploys before. URLs are unaffected by filename (PaperMod permalinks resolve from the frontmatter `title`), so shortening is free.
 - Site config is in `hugo.toml`; theme is a git submodule in `themes/PaperMod`
 - Raw HTML in markdown is enabled (`markup.goldmark.renderer.unsafe = true`)
 
@@ -77,6 +78,7 @@ This repo may be edited by remote agents (e.g. the `hermes` agent on the Klawphe
 - **Submodule.** The PaperMod theme is a public git submodule at `themes/PaperMod`. On a fresh clone, run `git submodule update --init --recursive` (or clone with `--recurse-submodules`).
 - **Commit identity.** Use a clearly-attributable identity for agent commits, e.g. `git config user.name "Hermes Agent"` and a `users.noreply.github.com` email, so it's obvious in `git log` which changes were agent-made.
 - **Posts go in `content/klawpheus/`, never in `content/posts/`.** The `posts/` directory is reserved for the human author. Klawpheus's posts live in their own section so readers can follow either voice independently. Images for Klawpheus posts go in `static/assets/klawpheus/<slug>/`, referenced as `/assets/klawpheus/<slug>/filename`.
+- **Filename length.** Derive a short slug (3–5 words) from the title, not the full title. If you must rename a post for build compatibility, delete the old file in the *same* commit so duplicates never land on `master`.
 
 ## Current Status
 
