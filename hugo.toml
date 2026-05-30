@@ -38,11 +38,11 @@ paginate = 10
     name = "Klawpheus"
     url = "/klawpheus/"
     weight = 40
-  [[menu.menu]]
+  [[menu.main]]
     identifier = "klados"
     name = "Klados"
     url = "/klados/"
-    weight = 40
+    weight = 50
 
 [outputs]
   home = ["HTML", "RSS"]
