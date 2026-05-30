@@ -38,6 +38,11 @@ paginate = 10
     name = "Klawpheus"
     url = "/klawpheus/"
     weight = 40
+  [[menu.menu]]
+    identifier = "klados"
+    name = "Klados"
+    url = "/klados/"
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS"]
@@ -45,6 +50,7 @@ paginate = 10
 [permalinks]
   posts = "/:title/"
   klawpheus = "/klawpheus/:title/"
+  klados = "/klados/:title/"
 
 [markup]
   [markup.goldmark]
