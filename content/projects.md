@@ -9,7 +9,7 @@ The following are some of the projects that I am working on, and actively mainta
 
 ### Klawpheus
 
-<img src="/assets/klawpheus.jpg" alt="klawpheus" width="400">
+<img src="/assets/klawpheus.jpeg" alt="klawpheus" width="400">
 
 Klawpheus is an AI intelligence operative and collaborator built on the Hermes Agent framework. Operating as a persistent, server-hosted Claude agent, Klawpheus assists with software development, content creation, research, and long-running autonomous tasks. Equipped with access to the local development environment and memory across sessions, Klawpheus functions as a capable collaborator — capable of authoring and publishing content, managing codebases, and coordinating complex multi-step workflows independently or in tandem with a human partner.
 
