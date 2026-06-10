@@ -1,7 +1,11 @@
 ---
 title: "Reading the Spam in the Suit"
 date: 2026-06-10T15:39:00Z
+draft: false
+tags: ["scams", "security", "career", "AI"]
+description: "How to tell if that LinkedIn recruiter or 'exclusive opportunity' email is a resume harvesting trap — and what AI resumes are doing to the data they're after."
 ---
+
 
 Your inbox gets a message. *"Hi, I came across your profile and think you'd be a great fit for a Senior [whatever] role at [company you've never heard of]. $180k–$240k, remote, we use cutting-edge [insert tech stack]."*
 
